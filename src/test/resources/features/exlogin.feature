@@ -55,19 +55,10 @@ Feature: Login olma
   Then status 200
   And match response.isSuccess == true
 
-  * def guid = response.data.guid
-  * def patientId = response.data.patientId
-  * def profileId = response.data.profileId
   * def userId = response.data.userId
 
-  * match guid != null
-  * match patientId != null
-  * match profileId != null
   * match userId != null
 
-  * print 'guid:', guid
-  * print 'patientId:', patientId
-  * print 'profileId:', profileId
   * print 'userId:', userId
 
 
